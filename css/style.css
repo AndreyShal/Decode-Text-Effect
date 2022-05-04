@@ -20,6 +20,7 @@
 a:focus,
 a:active {
     outline: none;
+    
 }
 
 nav,
@@ -64,6 +65,7 @@ button::-moz-focus-inner {
 a,
 a:visited {
     text-decoration: none;
+    
 }
 
 a:hover {
@@ -89,9 +91,11 @@ h6 {
 }
 
 /*----------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------------------------------*/
 @import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
  .decode-text {
-	 width: 100%;
+	 width: 90vw;
+	 margin: 0 auto;
 	 font-size: 30px;
 	 text-align: center;
 }
