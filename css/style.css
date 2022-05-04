@@ -1,0 +1,147 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    /* height: 100%; */
+    width: 100%;
+    font-size: 100%;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    /* overflow-x: hidden; */
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+ .decode-text {
+	 width: 100%;
+	 font-size: 30px;
+	 text-align: center;
+}
+ .space {
+	 display: inline-block;
+	 width: 10px;
+}
+ .text-animation {
+	 display: inline-block;
+	 position: relative;
+	 color: transparent;
+	 text-transform: uppercase;
+}
+ .text-animation:before {
+	 content: '';
+	 color: black;
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 background: #0e182d;
+	 width: 0;
+	 height: 1.2em;
+	 -webkit-transform: translate(-50%, -55%);
+	 -ms-transform: translate(-50%, -55%);
+	 transform: translate(-50%, -55%);
+}
+ .text-animation.state-1:before {
+	 width: 1px;
+}
+ .text-animation.state-2:before {
+	 width: 0.9em;
+}
+ .text-animation.state-3 {
+	 color: black;
+}
+ .text-animation.state-3:before {
+	 width: 0;
+}
+ #refresh {
+	 position: absolute;
+	 top: 20px;
+	 left: 20px;
+	 cursor: pointer;
+}
+ div {
+	 font-family: 'Share Tech Mono', monospace;
+}
+ body {
+	 height: 100vh;
+	 align-items: center;
+	 display: flex;
+}
+ 
