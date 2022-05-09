@@ -92,65 +92,69 @@ h6 {
 
 /*----------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------------------------------------------------------------*/
- .decode-text {
-	 width: 90vw;
-	 margin: 0 auto;
-	 font-size: 30px;
-	 text-align: center;
-	 line-height: 40px;
+.section-test{
+	height: 100vh;
+	overflow: hidden;
+	display: grid;
+	display: flex;
+	align-content: center;
+	left: 0;
+
 }
- .space {
-	 display: inline-block;
-	 width: 10px;
+.principles-box {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 30px;
+	padding-right: 30px;
 }
- .text-animation {
-	 display: inline-block;
-	 position: relative;
-	 color: transparent;
-	 text-transform: uppercase;
+
+.principles-list {
+	height: 100vh;
+	white-space: nowrap;
+	display: inline-flex;
+	align-items: center;
 }
- .text-animation:before {
-	 content: '';
-	 color: black;
-	 position: absolute;
-	 top: 50%;
-	 left: 50%;
-	 background: #0e182d;
-	 width: 0;
-	 height: 1.2em;
-	 -webkit-transform: translate(-50%, -55%);
-	 -ms-transform: translate(-50%, -55%);
-	 transform: translate(-50%, -55%);
+.section1{
+	background-color: red;
 }
- .text-animation.state-1:before {
-	 width: 1px;
+.section2{
+	background-color: green;
 }
- .text-animation.state-2:before {
-	 width: 0.9em;
+.section3{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 3000px;
+	background-color: palegoldenrod;
 }
- .text-animation.state-3 {
-	 color: black;
+.custom-p{
+	/* left: 0;
+	display: flex;
+	justify-content: space-between; */
+	width: 3000px;
+	height: 200px;
+	/* background-color: #55D6BE; */
+	/* opacity: 0; */
+	/* transition: opacity 6s; */
+	/* transform: translateX(0%); */
 }
- .text-animation.state-3:before {
-	 width: 0;
+.scroll-class{
+
+	/* opacity: 1; */
 }
-.text-animation>img{
-	width: auto;
-	height: 1.2em;
+.custom-p-num{
+	width: 1000px;
+	height: 200px;
 }
- #refresh {
-	 position: absolute;
-	 top: 20px;
-	 left: 20px;
-	 cursor: pointer;
+.custom-p1{
+	background-color: fuchsia;
 }
- div {
-	font-family: "Helvetica Neue";
+.custom-p2{
+	background-color: orange;
 }
- body {
-	 height: 100vh;
-	 align-items: center;
-	 display: flex;
+.custom-p3{
+	background-color: blue;
 }
  
 @font-face {

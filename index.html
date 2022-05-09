@@ -5,169 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/2-locomotive-scroll.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="decode-text">
-      <div class="text-animation">When</div>
-      <div class="space"></div>
-
-      <div class="text-animation"><img src="./img/emoji1.svg" alt="emoji" /></div>
-      <div class="space"></div>
-
-      <div class="text-animation">starting</div>
-      <div class="space"></div>
-
-      <div class="text-animation"></div>
-      <div class="space"></div>
-
-      <div class="text-animation">a</div>
-      <div class="space"></div>
-
-      <div class="text-animation">new</div>
-      <div class="space"></div>
-
-      <div class="text-animation">project</div>
-      <div class="space"></div>
-
-      <div class="text-animation">The</div>
-      <div class="space"></div>
-
-      <div class="text-animation">First</div>
-      <div class="space"></div>
-
-      <div class="text-animation"></div>
-      <div class="space"></div>
-
-      <div class="text-animation">thing</div>
-      <div class="space"></div>
-
-      <div class="text-animation">is</div>
-      <div class="space"></div>
-
-      <div class="text-animation">choosing</div>
-      <div class="space"></div>
-
-      <div class="text-animation">the</div>
-      <div class="space"></div>
-
-      <div class="text-animation"></div>
-      <div class="space"></div>
-
-      <div class="text-animation">right</div>
-      <div class="space"></div>
-
-      <div class="text-animation">path.</div>
-      <div class="space"></div>
-
-      <div class="text-animation">Our</div>
-      <div class="space"></div>
-
-      <div class="text-animation">projects</div>
-      <div class="space"></div>
-
-      <div class="text-animation">are</div>
-      <div class="space"></div>
-
-      <div class="text-animation">the</div>
-      <div class="space"></div>
-
-      <div class="text-animation">culmination</div>
-      <div class="space"></div>
-
-      <div class="text-animation">of</div>
-      <div class="space"></div>
-
-      <div class="text-animation">applying</div>
-      <div class="space"></div>
-
-      <div class="text-animation">First-class</div>
-      <div class="space"></div>
-
-      <div class="text-animation">expertise</div>
-      <div class="space"></div>
-
-      <div class="text-animation"><img src="./img/emoji7.svg" alt="emoji" /></div>
-      <div class="space"></div>
-
-      <div class="text-animation">to</div>
-      <div class="space"></div>
-
-      <div class="text-animation">satisfy</div>
-      <div class="space"></div>
-
-      <div class="text-animation">customer</div>
-      <div class="space"></div>
-
-      <div class="text-animation">and</div>
-      <div class="space"></div>
-
-      <div class="text-animation">user</div>
-      <div class="space"></div>
-
-      <div class="text-animation">needs.</div>
-      <div class="space"></div>
-
-      <div class="text-animation">Working</div>
-      <div class="space"></div>
-
-      <div class="text-animation">with</div>
-      <div class="space"></div>
-
-      <div class="text-animation">our</div>
-      <div class="space"></div>
-
-      <div class="text-animation">studios</div>
-      <div class="space"></div>
-
-      <div class="text-animation">will</div>
-      <div class="space"></div>
-
-      <div class="text-animation">make</div>
-      <div class="space"></div>
-
-      <div class="text-animation">you</div>
-      <div class="space"></div>
-
-      <div class="text-animation">forget</div>
-      <div class="space"></div>
-
-      <div class="text-animation">that</div>
-      <div class="space"></div>
-
-      <div class="text-animation">last</div>
-      <div class="space"></div>
-
-      <div class="text-animation">time,</div>
-      <div class="space"></div>
-
-      <div class="text-animation">and</div>
-      <div class="space"></div>
-
-      <div class="text-animation">focus</div>
-      <div class="space"></div>
-
-      <div class="text-animation"><img src="./img/emoji4.svg" alt="emoji" /></div>
-      <div class="space"></div>
-
-      <div class="text-animation">on</div>
-      <div class="space"></div>
-
-      <div class="text-animation">The</div>
-      <div class="space"></div>
-
-      <div class="text-animation">First.</div>
-      <div class="space"></div>
+    <div data-scroll-container>
+      <section class="section-test section1" data-scroll-section>
+        <h1>Hey</h1>
+        <p>👋</p>
+      </section>
+      <section class="section3" data-scroll-section></section>
+      <section class="section-test section2" id="my-section" data-scroll-section>
+        <div
+          data-scroll-direction="horizontal"
+          data-scroll-class="scroll-class"
+          data-scroll-repeat="true"
+          data-scroll
+          data-scroll-speed="50"
+          class="custom-p"
+        >
+          <div class="principles-box">
+            <div class="principles-list">
+              <div class="custom-p-num custom-p1"></div>
+              <div class="custom-p-num custom-p2"></div>
+              <div class="custom-p-num custom-p3"></div>
+            </div>
+          </div>
+        </div>
+        <!-- <h2">What's up?</h2> -->
+      </section>
+      <section class="section-test section1" data-scroll-section>
+        <h1>Hey</h1>
+        <p>👋</p>
+      </section>
+      <section class="copyright-boss__container" data-scroll-section>
+        <div class="copyright copyright-boss">Copyright © The First Studio 2022</div>
+      </section>
     </div>
-
-    <a id="refresh" onclick="decodeText();">
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-        <path
-          d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"
-        />
-        <path d="M0 0h24v24H0z" fill="none" />
-      </svg>
-    </a>
+    <script src="js/locomotive-scroll.min.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>
