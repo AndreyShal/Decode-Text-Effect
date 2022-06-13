@@ -22,7 +22,6 @@ window.addEventListener("resize", function () {
 const mouse = {
   x: 0,
   y: 0,
-  vr: 0,
 };
 window.addEventListener("mousemove", function (e) {
   mouse.x = e.x;
@@ -47,7 +46,7 @@ class FlowFieledEffect {
     this.#ctx.strokeStyle = this.gradient;
     this.#ctx.strokeStyle = "white";
     this.radius = 0;
-    this.vr = 0.03;
+    this.vr = 0.06;
   }
   #createGradient() {
     this.gradient = this.#ctx.createLinearGradient(0, 0, this.#width, this.#height);
@@ -64,9 +63,9 @@ class FlowFieledEffect {
     let dx = mouse.x - positionX;
     let dy = mouse.y - positionY;
     let distance = dx * dx + dy * dy;
-    if (distance > 200000) distance = 350000;
+    if (distance > 200000) distance = 400000;
     else if (distance < 200000) {
-      distance = 500000;
+      distance = 600000;
     }
     let length = distance / 50000;
     this.#ctx.beginPath();
@@ -85,7 +84,7 @@ class FlowFieledEffect {
       this.radius += this.vr;
       if (this.radius > 5 || this.radius < -5) this.vr *= -1;
 
-      for (let y = 0; y < this.#height; y += this.cellSize) {
+      for (let y = 0; y < this.#height; y += this.cellSize / 1.5) {
         for (let x = 0; x < this.#width; x += this.cellSize) {
           const angle = (Math.cos(x * 0.001) + Math.sin(y * 0.001)) * this.radius;
           this.#drawLine(angle, x, y);
