@@ -41,22 +41,22 @@ class FlowFieledEffect {
     this.interval = 1000 / 60;
     this.timer = 0;
     this.cellSize = 50;
-    this.gradient;
-    this.#createGradient();
-    this.#ctx.strokeStyle = this.gradient;
+    // this.gradient;
+    // this.#createGradient();
+    // this.#ctx.strokeStyle = this.gradient;
     this.#ctx.strokeStyle = "white";
     this.radius = 0;
     this.vr = 0.06;
   }
-  #createGradient() {
-    this.gradient = this.#ctx.createLinearGradient(0, 0, this.#width, this.#height);
-    this.gradient.addColorStop("0.1", "#ff5c33");
-    this.gradient.addColorStop("0.2", "#ff66b3");
-    this.gradient.addColorStop("0.3", "#ccccff");
-    this.gradient.addColorStop("0.4", "#b3ffff");
-    this.gradient.addColorStop("0.5", "#80ff80");
-    this.gradient.addColorStop("0.6", "#ffff33");
-  }
+  // #createGradient() {
+  //   this.gradient = this.#ctx.createLinearGradient(0, 0, this.#width, this.#height);
+  //   this.gradient.addColorStop("0.1", "#ff5c33");
+  //   this.gradient.addColorStop("0.2", "#ff66b3");
+  //   this.gradient.addColorStop("0.3", "#ccccff");
+  //   this.gradient.addColorStop("0.4", "#b3ffff");
+  //   this.gradient.addColorStop("0.5", "#80ff80");
+  //   this.gradient.addColorStop("0.6", "#ffff33");
+  // }
   #drawLine(angle, x, y) {
     let positionX = x;
     let positionY = y;
